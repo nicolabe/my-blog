@@ -8,9 +8,14 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Welcome all</h1>
+    <p>Thank you for visiting this blog.</p>
+    <section>
+      Here I will be writing about things that I learn in the interest of making
+      gaining a deeper and more thorough understanding. Topics will include
+      technology/programming, philosophy, fitness and physics, but it could
+      really be anything that I find fascinating.
+    </section>
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>

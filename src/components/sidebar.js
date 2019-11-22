@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
+  <aside
     style={{
       background: `seagreen`,
       marginBottom: `1.45rem`,
@@ -28,7 +28,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
     </div>
-  </header>
+  </aside>
 )
 
 Header.propTypes = {
@@ -39,4 +39,4 @@ Header.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default Sidebar
