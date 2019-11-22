@@ -1,6 +1,25 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import styled from "styled-components"
+
+const ContentWrapper = styled.div`
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 1.45rem 1.0875rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`
+
+const LinkWrapper = styled.div``
+
+const HeaderLink = styled(props => <Link {...props} />)`
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 500;
+`
 
 const Header = ({ siteTitle }) => (
   <header
@@ -9,7 +28,7 @@ const Header = ({ siteTitle }) => (
       marginBottom: `1.45rem`,
     }}
   >
-    <div
+    <ContentWrapper
       style={{
         margin: `0 auto`,
         maxWidth: 960,
@@ -27,7 +46,10 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-    </div>
+      <LinkWrapper>
+        <HeaderLink to="/list-of-posts/">Posts</HeaderLink>
+      </LinkWrapper>
+    </ContentWrapper>
   </header>
 )
 
